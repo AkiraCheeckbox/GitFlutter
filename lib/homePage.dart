@@ -9,7 +9,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('Home Page'),
+        child: Column(
+          children: [
+            Text('Home Page'),
+            Text('This is the home page',
+                style: TextStyle(fontSize: 20, color: Colors.blue)),
+          ],
+        ),
       ),
     );
   }
